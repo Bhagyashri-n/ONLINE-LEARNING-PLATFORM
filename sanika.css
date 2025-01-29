@@ -1,0 +1,94 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    text-align: center;
+    color: white;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+}
+
+.video-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.video-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px;
+    width: 250px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.video-item:hover {
+    background-color: #f0f0f0;
+}
+
+#videoPlayer {
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+form input {
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+}
+
+form button {
+    background-color: #007bff;
+    color: white;
+}

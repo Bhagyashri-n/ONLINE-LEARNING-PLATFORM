@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Learning Platform</title>
+    <link rel="stylesheet" href="sanika.css">
+    <script src="sanika.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Online Learning Platform</h1>
+        <nav>
+            <ul>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#quizzes">Quizzes</a></li>
+                <li><a href="#progress">Progress</a></li>
+                <li><a href="#login" id="loginLink">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Video Section -->
+    <section id="videos">
+        <h2>Video Lessons</h2>
+        <div class="video-list">
+            <div class="video-item" onclick="playVideo('video1.mp4')">
+                <h3>Introduction to HTML</h3>
+                <p>This is a beginner-friendly introduction to HTML.</p>
+            </div>
+            <div class="video-item" onclick="playVideo('video2.mp4')">
+                <h3>CSS Basics</h3>
+                <p>Learn the fundamentals of CSS and styling your website.</p>
+            </div>
+            <div class="video-item" onclick="playVideo('video3.mp4')">
+                <h3>JavaScript Essentials</h3>
+                <p>Learn JavaScript to make your website interactive.</p>
+            </div>
+        </div>
+        
+        <div id="videoPlayer" style="display:none;">
+            <h3>Now Playing: <span id="videoTitle"></span></h3>
+            <video id="videoElement" width="100%" controls>
+                <source id="videoSource" src="" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <button onclick="markAsCompleted()">Mark as Completed</button>
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quizzes">
+        <h2>Quizzes</h2>
+        <div class="quiz">
+            <h3>HTML Basics Quiz</h3>
+            <p>Test your knowledge on HTML basics.</p>
+            <button onclick="startQuiz()">Start Quiz</button>
+        </div>
+    </section>
+
+    <!-- Progress Section -->
+    <section id="progress">
+        <h2>Your Progress</h2>
+        <p>Track your progress on video lessons and quizzes.</p>
+        <ul>
+            <li>Introduction to HTML - Completed</li>
+            <li>CSS Basics - In Progress</li>
+            <li>JavaScript Essentials - Not Started</li>
+        </ul>
+    </section>
+
+    <!-- Login Section (initially hidden) -->
+    <section id="login" style="display:none;">
+        <h2>Login</h2>
+        <form id="loginForm" onsubmit="loginUser(event)">
+            <label for="email">Email: </label>
+            <input type="email" id="email" required><br>
+            <label for="password">Password: </label>
+            <input type="password" id="password" required><br>
+            <button type="submit">Login</button>
+        </form>
+        <p id="loginMessage" style="color:red;"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Online Learning Platform</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
